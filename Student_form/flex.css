@@ -1,0 +1,36 @@
+.container{
+    background-color: beige;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    display:flex;
+    flex-direction:row ;
+    /* flex-wrap: wrap; */
+    height: 1200px;
+    align-content: start;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+}
+#box1{
+background-color: orange;
+/* order: 3; */
+}
+#box2{
+background-color: blueviolet;
+}
+#box3{
+
+    background-color: aqua;
+}
+#box4{
+
+    background-color: palegreen;
+}
