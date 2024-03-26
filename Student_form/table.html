@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="table.css">
 </head>
 <body>
+    <div class="main">
+    <!-- section 1 -->
     <div class="container-fluid nav">
         <div class="logos">
             <h1 class="compname"><label>HARKEN</label></h1>
@@ -16,31 +18,39 @@
         </div>
         <div class="selections">
             <label for="">Comercial</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
             <label for="">Resedential</label>
         </div>            
         <div class="navelements">
             <nav class="nav">
-               <p> <a href="#">CLIENTS</a></p>
-               <p> <a href="#"> LISTING </a></p>
-               <p> <a href="#">COMPS</a></p>
-               <p> <a href="#">EVALUATIONS</a></p>
+               <p> <a>CLIENTS</a></p>
+               <p> <a> LISTING </a></p>
+               <p> <a>COMPS</a></p>
+               <p> <a>EVALUATIONS</a></p>
+               <p> <a> <i class="fa-regular fa-circle-user"></i> SUPER AD... <i class="arrow down"></i></a></p>
             </nav>
         </div>
     </div>
     <!-- section 2 -->
     <div class="search">
         <div>
-            <h3>COMP LIST</h3>
+            <h3>COMPS LIST</h3>
         </div>
         <div class="searching">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search.." name="search">
+            <button class="icon" type="submit"><i class="fa fa-search"></i></button>
+            <input class="srch" type="text" placeholder="Search.." name="search">
         </div>
         <div class="filter">
             <button class="filt">Filters     <i class="fa-solid fa-sliders"></i></button>
+            </div>
+        <div class="addd">
             <button class="add">Add New +</button>
         </div>
     </div>
+    <!-- section 3 -->
     <div>
         <table>
             <tr>
@@ -51,7 +61,7 @@
                 <th>$/SF <i class="fa-solid fa-sort"></i></th>
                 <th>Type <i class="fa-solid fa-sort"></i></th>
                 <th>Date Sold <i class="fa-solid fa-sort"></i></th>
-                <th>Actions <i class="fa-solid fa-sort"></i></th>
+                <th>Actions </th>
                 
             </tr>
             <tr>
@@ -240,5 +250,19 @@
             
         </table>
     </div>
+    <div class="pages">
+
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <a id="no" href="#" class="active">1</a>
+            <a id="no" href="#" >2</a>
+            <a id="no" href="#">3</a>
+            <a id="no" href="#">4</a>
+            <a id="no" href="#">5</a>
+            <a id="no" href="#">Next</a>
+          </div>
+
+    </div>
+</div>
 </body>
 </html>
