@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="bookorder.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="signUp.html">
+    <link rel="stylesheet" href="bookListing.html">
+    <link rel="stylesheet" href="addbooks.html">
+    <link rel="stylesheet" href="yourcart.html">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <h1>DITS</h1>
+        </div>
+        <div class="navSelection">
+            <nav>
+                <a href="login.html">Login</a>
+                <a href="signUp.html">Sign up</a>
+                <a href="booksListing.html" >Books</a>
+                <a href="addbooks.html">Add Book</a>
+                <a href="yourcart.html">My Orders <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">  
+        <div class="title">  
+            <h2> Book Order Form template Example </h2>  
+        </div>  
+      <div class="d-flex">  
+        <form action="" method="">  
+          <label>  
+            <span class="fname"> First Name <span class="required"> * </span></span>  
+            <input type="text" name="fname">  
+          </label>  
+          <label>  
+            <span class="lname"> Last Name <span class="required"> * </span> </span>  
+            <input type="text" name="lname">  
+          </label>  
+          <label>  
+            <span> Company Name </span>  
+            <input type="text" name="cn">  
+          </label>  
+          <label>  
+            <span>Country <span class="required">*</span></span>  
+            <select name="selection">  
+              <option value="select"> Select a country... </option>  
+              <option value="AFG">Afghanistan</option>  
+              <option value="ALA">?land Islands</option>  
+              <option value="ALB">Albania</option>  
+              <option value="DZA">Algeria</option>  
+              <option value="ASM">American Samoa</option>  
+              <option value="AND">Andorra</option>  
+              <option value="BOL">Bolivia</option>  
+              <option value="BES">Bonaire</option>  
+              <option value="BIH">Bosnia</option>  
+              <option value="BWA">Botswana</option>  
+              <option value="BVT">Bouvet Island</option>  
+              <option value="BRA">Brazil</option>  
+              <option value="CUB">Cuba</option>  
+              <option value="CUW">Cura?ao</option>  
+              <option value="CYP">Cyprus</option>  
+              <option value="CZE">Czech Republic</option>  
+              <option value="EST">Estonia</option>  
+              <option value="ETH">Ethiopia</option>  
+              <option value="FLK">Falkland Islands (Malvinas)</option>  
+              <option value="LTU">Lithuania</option>  
+              <option value="LUX">Luxembourg</option>  
+              <option value="MAC">Macao</option>  
+              <option value="MKD">Macedonia, the former Yugoslav Republic of</option>  
+              <option value="MDG">Madagascar</option>  
+              <option value="MCO">Monaco</option>  
+              <option value="MNG">Mongolia</option>  
+              <option value="MNE">Montenegro</option>  
+              <option value="MSR">Montserrat</option>  
+              <option value="MAR">Morocco</option>  
+              <option value="NPL">Nepal</option>  
+              <option value="BLM">Saint Barth?lemy</option>  
+              <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>  
+              <option value="KNA">Saint Kitts and Nevis</option>  
+              <option value="LCA">Saint Lucia</option>  
+              <option value="MAF">Saint Martin (French part)</option>  
+              <option value="SPM">Saint Pierre and Miquelon</option>  
+              <option value="VCT">Saint Vincent and the Grenadines</option>  
+              <option value="VNM">Viet Nam</option>  
+              <option value="VGB">Virgin Islands, British</option>  
+              <option value="VIR">Virgin Islands, U.S.</option>  
+              <option value="WLF">Wallis and Futuna</option>  
+              <option value="ESH">Western Sahara</option>  
+              <option value="YEM">Yemen</option>  
+              <option value="ZMB">Zambia</option>  
+              <option value="ZWE">Zimbabwe</option>  
+            </select>  
+          </label>  
+          <label>  
+            <span> Address <span class="required"> * </span></span>  
+            <input type="text" name="houseadd" placeholder="House number and street name" required>  
+          </label>  
+          <label>  
+            <span> </span>  
+            <input type="text" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">  
+          </label>  
+          <label>  
+            <span> Town / City <span class="required">*</span></span>  
+            <input type="text" name="city">   
+          </label>  
+          <label>  
+            <span> State / County <span class="required">*</span></span>  
+            <input type="text" name="city">   
+          </label>  
+          <label>  
+            <span> Postcode / ZIP <span class="required">*</span></span>  
+            <input type="text" name="city">   
+          </label>  
+          <label>  
+            <span> Phone Number <span class="required">*</span></span>  
+            <input type="tel" name="city">   
+          </label>  
+          <label>  
+            <span> Email Address <span class="required">*</span></span>  
+            <input type="email" name="city">   
+          </label>  
+        </form>  
+        <div class="Yorder">  
+          <table>  
+            <tr>  
+              <th colspan="2"> Your order </th>  
+            </tr>  
+            <tr>  
+              <td> Product Name x 2(Qty) </td>  
+              <td> $8.00 </td>  
+            </tr>  
+            <tr>  
+              <td> Subtotal </td>  
+              <td> $8.00 </td>  
+            </tr>  
+            <tr>  
+              <td> Shipping </td>  
+              <td> Free shipping </td>  
+            </tr>  
+          </table><br>  
+          <div>  
+            <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer  
+          </div>  
+          <p>  
+              Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.  
+          </p>  
+          <div>  
+            <input type="radio" name="dbt" value="cd"> Cash on Delivery  
+          </div>  
+          <div>  
+            <input type="radio" name="dbt" value="cd"> Paypal <span>  
+            </span>  
+          </div>  
+          <button type="button"> Place Order </button>  
+        </div>  
+       </div>  
+      </div>  
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('addnewbook2.jpg');
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.7);
+    /* backdrop-filter: blur(0.8); */
+    color: #fff;
+    margin-top: -10px;
+    width:100%;
+    position: fixed;
+    
+}
+
+.navSelection{
+    margin-left: 40%;
+    margin-top:20px;
+    
+}
+a{margin-left: 50px;
+font-size: 20px;
+color: #fff;
+text-decoration: none;}
+.logo{
+    line-height: 0.2;
+    margin-left: 40px ;
+}
+
+.container{
+    /* background: #f2f2f2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    width: 800px;
+    margin-top: 80px;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #2222225d;
+    display: flex;
+    box-shadow: 15px 5px 30px rgba(0, 0, 0, 2);
+}
+.content{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.content:hover img{
+    transform:scale(1.1)
+}
+.loginform{
+    flex-basis: 50%;
+    background: #333;
+    font-family: roboto;
+    padding: 25px;
+
+}
+.loginform h1{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.tbox{
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #55efc4;
+    width: 100%;
+    height: 35px;
+    margin: 30px 0;
+}
+.tbox i{
+    color:#55efc4 ;
+    font-size: 15px;
+    padding: 7px;
+}
+.tbox input{
+    background: transparent;
+    width: 90%;
+    outline:none ;
+    border: 0;
+    padding-left: 5px;
+}
+::placeholder{
+    color: #777;
+}
+.btn{
+    width:100% ;
+    border: 0;
+    border-radius:5px ;
+    background: #55efc4;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+}
+.social{
+    margin-top: 25px;
+    list-style: none;
+    text-align: center;
+}
+.social li{
+    display: inline-block;
+}
+.social li i{
+    height:35px ;
+    width: 35px;
+    line-height:35px ;
+    border: 1px solid #55efc4;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+}
+.conection{
+    color: #fff;
+    text-align: center;
+}
+/* responsive */
+@media (max-width:786px) {
+    .login{
+        flex-direction: column;
+        margin: 0 15px;
+    }
+}

@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    /* margin: 0; */
+    padding: 0;
+    
+    /* background-image: url('loginbackground.png');
+    background-size: cover; */
+}
+.navbar{
+    display: flex;
+
+    background-image: linear-gradient( to bottom right, black,gray,black);
+    color:#fff
+  
+}
+.bttn{
+    /* justify-content: center; */
+}
+.btn{
+    justify-content: center;
+    /* background-color: #97db9a; */
+    background-image: linear-gradient(90deg, #3fad5b 0%, #075c55 );
+
+    border-radius: 5px;
+    margin-left: 50px;
+margin-top: 8px;
+}
+.navSelection{
+    margin-left:50%;
+    margin-top:40px;
+    
+}
+a{margin-left: 50px;
+font-size: 20px;
+text-decoration: none;}
+.logo{
+    line-height: 0.6;
+    margin-left: 40px ;
+}
+.menu{
+    /* background-image: linear-gradient( to bottom right, black,gray,black); */
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    
+}
+
+/* trending section */
+/* .trendingBooks{
+    display: flex;
+}
+.image{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.bookinfo{
+    margin-top: 50px;
+margin-left: 10px;
+}
+.image2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.bookinfo2{
+    margin-top: 50px;
+margin-left: 10px;
+}
+.tendings{
+    background-image: linear-gradient(skyblue,gray,skyblue);
+    height: 150px;
+} */
+.book{
+    height: 60;
+    width: 40;
+}
+/* flex box css */
+*{
+    margin: 0;
+    /* color: black; */
+    padding: 0;
+    /* font-family: cursive; */
+    box-sizing: border-box;
+}
+.flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/* .flex-box{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(black, white);
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+} */
+/* .flexbox{
+    background-image: url('loginbackground.png');
+    background-size: cover;
+} */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 13%;
+  height: 25%;
+  margin: 10px;
+
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  color: black;
+  font-size: 15px;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 90px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    font-size: 12px;
+    padding: 4px 8px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
