@@ -249,17 +249,16 @@ const myArrObject = [
 ];
 
 let fordModel = [];
-myArrObject.map(user => {
-    if(user.name === "Johansick") {
-        user.cars.map(car => {
-            if(car.name === "Ford4") {
-                fordModels = [...car.models];
-            }
-        })
-    }
-})
-console.log(fordModel)
-
+myArrObject.map((user) => {
+  if (user.name === "Johansick") {
+    user.cars.map((car) => {
+      if (car.name === "Ford4") {
+        fordModels = [...car.models];
+      }
+    });
+  }
+});
+console.log(fordModel);
 
 // let fordModels = [];
 // for (let i = 0; i < myArrObject.length; i++) {
@@ -270,9 +269,213 @@ console.log(fordModel)
 //             const car = cars[j];
 //             if (car.name === "Ford1") {
 //                 fordModels = [...car.models];
-//                 break; 
+//                 break;
 //             }
 //         }
 //     }
 // }
 // console.log(fordModels);
+
+// const data = [
+//   {
+//     name: "vishal",
+//     lastname: "sagar",
+//     city: "kurali",
+//     anotherdata: {
+//       age: 24,
+//       area: ["kurali", "mohali", "ropar"],
+//       final: [
+//         {
+//           data: "area",
+//           pincode: "140103"
+//         }
+//       ]
+//     }
+//   }
+// ];
+
+// const output = data.map((item) => {
+//   return item.anotherdata.final.map((innerItem) => {
+//     return {
+//       data: innerItem.data,
+//       pincode: innerItem.pincode
+//     };
+//   });
+// });
+
+// console.log(output);
+// const data = [
+//   {
+//     name: "vishal",
+//     lastname: "sagar",
+//     city: "kurali",
+//     anotherdata: {
+//       age: 24,
+//       area: ["kurali", "mohali", "ropar"],
+//       final: [
+//         {
+//           data: "area",
+//           pincode: "140103"
+//         }
+//       ]
+//     }
+//   }
+// ];
+
+// // Print data and pincode using document.write()
+// document.write("<h1>Data and Pincode</h1>");
+// data.forEach((item, index) => {
+//   document.write(`<p> Data: ${item.anotherdata.final[0].data}, Pincode: ${item.anotherdata.final[0].pincode}</p>`);
+// });
+
+// const resultdata = [
+//   {
+//     name: "shubham",
+//     lastname: "shukla",
+//     city: "jammu",
+//     anotherdata: {
+//       age: 24,
+//       area: ["fazilka", "indore", "pakistan"],
+//       final: [
+//         {
+//           data: "jgah",
+//           pincode: "201203",
+//           city: [
+//             { name: "himachal", area: "jammu" },
+//             { name: "una", area: "pathankot" },
+//             { name: "ferozpur", area: "ropar" },
+//             {
+//               data: [
+//                 { edu: "bca", result: "pass" },
+//                 {
+//                   edu: "bba",
+//                   result: "good",
+//                 },
+//                 {
+//                   edu: "btec",
+//                   result: "excellent",
+//                   areaTwo: ["fazilka", "indore", "pakistan"],
+//                   performance: ["80%", "70%", "99%"],
+//                   anotherresut: [
+//                     { edu: "btec", result: "excellent" },
+//                     {
+//                       edu: "bcaaa",
+//                       result: "pooor",
+//                     },
+//                     {
+//                       edu: "arts",
+//                       result: "great",
+//                     },
+//                   ],
+//                 },
+//               ],
+//             },
+//           ],
+//         },
+//       ],
+//     },
+//   },
+// ];
+// const finalresult = resultdata.forEach((element) => {
+//   document.write(
+//     `${element.anotherdata.final[0].city[3].data[2].performance[1]} and ${element.anotherdata.final[0].city[3].data[2].anotherresut[1].result}`
+//   );
+// });
+
+let myArr = [
+  {
+    studenName: "jack",
+    studenClass: 6,
+    studenSection: "a",
+  },
+  {
+    studenName: "tom",
+    studenClass: 6,
+    studenSection: "a",
+  },
+];
+
+// const newvalue = myArr.map(obj => `"${Object.keys(obj)[0]}":"${Object.values(obj)[0]}""${Object.keys(obj)[1]}":"${Object.values(obj)[1]}""${Object.keys(obj)[2]}":"${Object.values(obj)[2]}"`);
+const newval = myArr.map((obj) => {
+  console.log(
+    `StudentName:"${obj.studenName}"studenClass:"${obj.studenClass}"studenSection:"${obj.studenSection}"`
+  );
+});
+// const resultString = newvalue.join(', ');
+
+// console.log(resultString);
+const color = ["red", "gren", "blue"];
+color[5] = "purple";
+const necolors = color.map((val, index) => {
+  console.log(`"${val}:${index}"`);
+});
+const newCars = ["AMG", "BMW", "AUDI"];
+const latestCars = newCars.map((carele) => {
+  return carele;
+});
+console.log(latestCars.toString());
+
+const cars = [];
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";
+cars[1] = "THAR";
+const latCars = cars.map((carele) => {
+  return carele;
+});
+console.log(latCars[1]);
+const person = [
+  { firstName: "Johns", lastName: "Doe", age: 46 },
+  { firstName: "Johsdn", lastName: "Doe", age: 40 },
+  { firstName: "Johsan", lastName: "Doe", age: 36 },
+  { firstName: "Joshn", lastName: "Doe", age: 32 },
+];
+const newperson = person.filter((el) => {
+  if (el.age <= 40) {
+    return el;
+  }
+});
+console.log(newperson);
+const vishal = arr1[0].fruits[2][2];
+console.log(vishal); // Output: vishal
+
+const person1 = [
+  { firstName: "Johns", lastName: "Doe", age: 46 },
+  { firstName: "John1", lastName: "Doe", age: 40 },
+  { firstName: "John2", lastName: "Doe", age: 36 },
+  { firstName: "John3", lastName: "Doe", age: 32 },
+];
+const newperson1 = person
+  .map((el) => {
+    if (el.age <= 40) {
+      return el.firstName;
+    }
+  })
+  .filter((el) => !!el);
+console.log(newperson1.length);
+
+const newCar = ["AMG", "BMW", "AUDI"];
+const latestCar = newCars.map((carele) => {
+  return carele;
+});
+console.log(latestCars.toString());
+
+const arr = ["vishal", "sagar", [true, false, "mohali "]];
+
+console.log(arr[2][2]);
+
+const arr1 = [
+  {
+    name: "ram",
+    name: "sham",
+    vehicles: ["cars", "bikes"],
+    locations: [
+      { city: "chandigarh" },
+      { city: "mohali" },
+    ],
+    fruits: ["mango", "apple", ["jai ho ", "salmaan khan", "vishal"]],
+  },
+];
+
+const vishal1 = arr1[0].fruits[2][2];
+console.log(vishal1); 

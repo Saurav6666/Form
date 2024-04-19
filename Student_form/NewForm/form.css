@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color:rgb(245, 245, 245);
+    font-family: "Roboto",sans-serif;
+ 
+} 
+
+.parent{
+    position: relative;
+    padding: 21px;
+    
+}
+.courier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26%;
+    margin-bottom: -20px;
+    margin-top: -40px;
+}
+.text2{
+    color: gray;
+
+}
+.text1{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+
+.clintform{
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    height: 165px;
+
+}
+.form{
+    display: flex;
+    margin-top: 15px;
+}
+
+.styleDiv{
+    border-left: 2px solid rgb(206, 206, 206);;
+    height: 37px;
+    width: 40px;
+    position: absolute;
+    top:10px;
+    left: 550px;
+    
+}
+
+
+.form1{
+    /* background-color: blueviolet; */
+    position: relative;
+    /* width: 40%; */
+}
+
+
+
+
+.form2{
+    padding-left:650px;
+
+}
+.subparent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.senderform{
+    border: 1px solid rgb(206, 206, 206);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 50%;
+}   
+.heading{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -10px;
+    margin-top: -15px;
+}
+.heading p{
+    margin-left: 10px;
+    padding-top: 7px;
+     color: gray;
+     margin-left: 20px;
+}
+.reciverform{
+    border: 1px solid rgb(206, 206, 206);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 24px;
+    height: 600px;
+
+    width: 50%;
+
+}
+.fa-angles-right{
+    font-weight: 15px;
+    font-size: 25px;
+}
+.fa-calendar-days{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: gray;
+}
+.fa-plus{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 525px;
+    color: aliceblue;
+    font-size: 25px;
+    border-radius: 80px;
+    width: 25px;
+    text-align: center;
+    background-color: rgb(35, 136, 136);
+}
+.fa-angle-down{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 490px;
+}
+
+form  { display: table;}
+p     { display: table-row;  }
+label { display: table-cell; font-weight: 600; }
+input { display: table-cell;   border-radius: 18px; border: 1px solid gray; margin-left: 40px; margin-top: 8px; width: 210%; height: 35px;}
+
+::placeholder{
+    padding-left: 15px;
+    font-size: 15px;
+}
+.inputStyle{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}

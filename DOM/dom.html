@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1>DOM learning</h1>
+        <h3 id="sample">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 id="sampletxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <input type="button" id="btn" onclick="chngcolor()" value="color change">
+
+        <h3 id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <h3 id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <input type="button" id="btn2" value="color change"><br><br>
+        <h1>Add 2 numbers</h1>
+        <input id="num1" type="number"> +
+        <input id="num2" type="number"> =
+        <input id="total" > :
+        <input type="button" value="calculate sum" onclick="calc()">
+        <!-- Add new element -->
+        <!-- change attribute -->
+        <h1 class="yellow" id="yoo">Hi</h1>
+        <input id="myInput" type="text">
+        <p id="updatepara">Hello</p>
+
+    </div>
+    <script>
+        function calc(){
+           let num1=Number( document.getElementById("num1").value)
+           let num2=Number( document.getElementById("num2").value)
+           let sum= num1+num2;
+           document.getElementById("total").value=sum
+
+        }
+        function chngcolor(){
+            let para1=document.getElementById("sample").value
+            sample.setAttribute("style","color:red")    
+            let para2=document.getElementById("sampletxt").value
+            sampletxt.setAttribute("style","color:yellow")    
+        }
+// using for eventlistner to change color
+let paraa1=document.getElementById("para1")
+let paraa2=document.getElementById("para2")
+const button=document.getElementById("btn2")    
+ 
+button.addEventListener('click', function(){
+    paraa1.style.color="green"
+    paraa2.style.color="pink"
+
+} )
+///how to create new element
+const newparagraph= document.createElement('p')
+newparagraph.textContent='Hello Saurav.'
+document.body.appendChild(newparagraph); 
+///change attribute
+const h1tag= document.getElementById("yoo");
+h1tag.className='black';
+//update form input value
+const myInput= document.getElementById("myInput");
+myInput.addEventListener('input' ,function(){
+    document.getElementById('updatepara').textContent=myInput.value
+});
+    </script>
+</body>
+</html>
